@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Palágyi Domán">
+    <meta name="copyright" content="Tanulási célra">
+    <meta name="description" content="A hobbimmal, a síeléssel foglalkozó weboldal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.CSS">
+
+
+
+
+
+    <title>A síelés - Quiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                $("#myform").validate({
+                    rules: {
+                        szul: "required",
+                        fnév: "required",
+                        munka: "required",
+                        felszerelés: "required",
+                        kozpont: "required",
+                        adatkez: "required",
+                    },
+                    messages: {
+                        szul: "Kérlek add meg a születési dátumodat!",
+                        fnév: " Írd be a keresztneved!",
+                        munka: " Kérlek jelölj be egy választ!",
+                        felszerelés: " Kérlek írd be a választ!",
+                        kozpont: "Adj meg egy számot",
+                        adatkez:" Kérlek fogadd el a feltételeket!",
+                    },
+                });
+            });
+        
+    </script>
+
+<style>
+    label.error {margin: 8px;
+        margin-top: 8px;
+        padding: 2px;
+    color: #FB3A3A;}
+    </style>
+    
+
+
+</head>
+
+<body>
+
+    <div class="flex">
+        <div class="parallax">
+    
+            <header>
+                <h1>A Síelés</h1>
+            </header>
+            <div class="menu">
+                <nav class="szin">
+                    <ul>
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="tortenelem.html">Történelem</a></li>
+                        <li><a href="felszereles.html">Felszerelés</a></li>
+                        <li><a href="sipalyak.html">Sípályák</a></li>
+                        <li id="current"><a href="#">Quiz</a></li>
+    
+                    </ul>
+                </nav>
+            </div>
+            <h2>Töltsd ki quizünket!</h2>
+        </div>
+        <article>
+    
+            <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="myform" novalidate>
+                <section><label>
+                        Add meg a neved!
+                        <input type="text" name="fnév" placeholder="név" id="nev">
+                    </label>
+                </section>
+                <section>
+                   <label> Add meg aszületési dátumodat!
+                    <input type="date" name="szul" id="szuldat"></label>
+                </section>
+    
+    
+                <section>
+                    1. A sílécet előbb találták fel mint a kereket? <br>
+                    <label>igaz<input value="1" type="radio" name="radiogomb" id="igaz"></label>
+                    <label>hamis<input value="0" type="radio" name="radiogomb" id="hamis"></label>
+                </section>
+                <section>
+                    2. Mely tényezők befolyásolhatják a megfelelő sícipő választását? <br>
+                    <label>
+                        <input type="checkbox" name="stilus" id="stilus">
+                        síelő stílusa</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="suly" id="suly">
+                        síelő súlya</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="ido" id="ido">
+                        sípályán töltött idő</label>
+    
+                </section>
+    
+                <section>
+    
+                    <label>
+                        3. Mi volt F. Nansen foglalkozása? <br>
+                        <select id="lista" size="1" name="munka">
+                            <option value="antr">antropológus</option>
+                            <option value="iro">író</option>
+                            <option value="sark">sarkkutató</option>
+                            <option value="fiz">fizikus</option>
+                        </select>
+                    </label>
+                </section>
+    
+    
+                <section>
+                    <label>
+                        4. Hány különálló síközpont öleli körbe Portes du Soleil-t? <br>
+                        <input name="kozpont" id="kozpont" type="number" min="5" max="15">
+                    </label> <br> <br>
+    
+                </section>
+                <section><label>
+                        5. Hányadik században adta ki Chernel István szaktanácsait tartalmazó könyvét? <br>
+                        18<input type="range" min="18" max="20" id="szazadban">20
+                    </label>
+                </section>
+                <section><label>
+                        6. Melyik felszerelés egyik jellemzője a camber? <br>
+                        <input type="text" id="felszereles" list="jellemzo" name="felszerelés"
+                            placeholder="Írd be a felszerelést.">
+                    </label>
+                    <datalist id="jellemzo">
+                        <option value="cipő">
+                        <option value="bot">
+                        <option value="léc">
+                    </datalist>
+                </section>
+                <section>
+                    <label>Elfogadom az adatkezelési feltételeket.
+                        <input type="checkbox" name="adatkez" value="elfogad" id="elfogadás"></label>
+    
+                </section>
+    
+    
+                <section class="kozepre"> <input type="reset" id="visszaall" class="gomb" value="helyreállítás"
+                        name="visszaallit">
+                </section>
+                <section class="kozepre"><input id="lead" class="gomb" type="submit" value="elküldés" name="elkuld">
+                </section>
+            </form>
+    
+    
+    
+        </article>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <footer>
+            <article>
+                <h3>2023 webfejlesztés beadandó
+                </h3>
+                <h3>Palágyi Domán</h3>
+            </article>
+        </footer>
+    
+    </div>
+    <script src="sajat_java/kiszamol.js"></script>
+    </body>
+    
+    </html>

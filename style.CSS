@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #799acf;
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    background-image: linear-gradient(160deg, rgb(45, 190, 206) 0%, #d5fff9 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+h1 {
+    color: #93e0ff;
+    text-align: center;
+    margin: 120px;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "sajat";
+}
+
+@font-face {
+    font-family: "sajat";
+    src: url(font/federal-escort/federalescortcond.ttf);
+}
+
+nav {
+    background-image: linear-gradient(#38bfc9b5 80%, #0059a7f3 100%);
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 4px;
+    padding: 2px 18px 2px 18px;
+}
+
+a {
+    font-size: 20px;
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+li {
+    padding: 3px;
+    margin: 4px;
+    border: whitesmoke solid 3px;
+}
+
+nav ul li#current {
+    padding: 3px;
+    margin: 4px;
+    background-image: linear-gradient(to top, #00defb 0%, #0199ff 100%);
+    border: whitesmoke solid 3px;
+}
+
+nav ul li:hover {
+    padding: 3px;
+    margin: 4px;
+    background-color: #3e758b;
+    border: whitesmoke solid 3px;
+    box-shadow: 0 0 5px lightblue;
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}
+
+p {
+    border: whitesmoke solid 3px;
+    margin: 8px;
+    padding: 6px;
+    box-shadow: 7px 7px 8px rgb(114, 183, 202);
+}
+
+.parallax {
+    background-image: url("kepek/para.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer article {
+    background-image: url("kepek/para.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer article h3 {
+    background-color: #37b9ca;
+}
+
+article {
+    justify-content: center;
+    margin: 3px;
+    padding: 3px;
+    border: whitesmoke solid 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+h3 {
+    box-shadow: 7px 7px 8px rgb(114, 183, 202);
+    text-decoration: underline;
+    padding: 6px;
+    margin: 8px;
+    border: whitesmoke solid 3px;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 29px;
+    font-weight: 900;
+    padding: 3px;
+    margin: 8px;
+    margin-top: 0;
+    border: whitesmoke solid 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    backdrop-filter: blur(2px);
+}
+
+figure {
+    text-align: center;
+    margin: 4px;
+    display: block;
+}
+
+video {
+    box-shadow: 7px 7px 8px lightblue;
+    max-width: 90%;
+    height: auto;
+    flex-wrap: wrap;
+    border: whitesmoke solid 3px;
+}
+
+img {
+    margin: 8px;
+    box-shadow: 7px 7px 8px rgb(114, 183, 202);
+    text-align: center;
+    width: 90%;
+    border: whitesmoke solid 3px;
+}
+
+.hirlevel {
+    text-align: center;
+    border: whitesmoke solid 2px;
+    margin: 8px;
+}
+
+footer {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    border: whitesmoke solid 3px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
+}
+
+.gomb {
+    background-color: #005AA7;
+    color: whitesmoke;
+    padding: 10px;
+    border: whitesmoke solid 2px;
+}
+
+.gomb:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #0199ff;
+}
+
+.galleria {
+    border: none;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 90vw;
+    height: 40vw;
+}
+
+.galleria img {
+    box-shadow: none;
+    border: none;
+    width: auto;
+}
+
+.kozepre {
+    text-align: center;
+}
+
+section {
+    background-color: #0199ff;
+    font-size: 19px;
+    box-shadow: 7px 7px 8px rgb(114, 183, 202);
+    border: whitesmoke solid 3px;
+    margin: 12px;
+    padding: 8px;
+}
+
+section p {
+    background-color: #1d7dd1;
+}
+
+label {
+    margin: 6px;
+}
+
+input {
+    margin: 6px;
+}
+
+select {
+    margin: 6px;
+}
+
+.betuszines {
+    font-size: smaller;
+    padding: 3px;
+}
+
+@media all and (min-width: 600px) {
+    ul {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        font-size: larger;
+    }
+}
+
+@media all and (min-width: 768px) {
+    article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    figure {
+        display: block;
+    }
+
+    p {
+        max-width: 45%;
+    }
+
+    nav {
+        background-image: linear-gradient(#38bfc990 100%, #005AA7 100%);
+    }
+}

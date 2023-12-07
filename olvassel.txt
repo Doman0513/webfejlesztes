@@ -1,0 +1,16 @@
+1.) Palágyi Domán
+2.) URL: https://doman0513.github.io/webfejlesztes/
+3.) Az egyik hobbimról, a síelésről készítettem el a weboldalt, olvasni lehet
+rajta többek között a felszerelésről, a síelés történelméről és sípályákról.
+4.) Két oldalamon szerepel javascript kód. A quiz oldalon található kód a felhasználó
+válaszai alapján számolja ki a pontokat, majd jeleníti meg. A főoldalon pedig egy color input
+segítségével változtathatja meg a felhasználó a betűk színét.
+5.)Internetről letöltött saját, Federal escort fonttípust használtam a weboldal header h1 részében.
+6.) A teljes kódot én készítettem. A szöveg wikipédiáról(https://hu.wikipedia.org/wiki/S%C3%ADel%C3%A9s),
+illetve az alábbi weboldalakról vettem:https://www.sportosbolt.hu/hasznos-sieles
+https://egy.hu/aktiv/menj-hegyre-az-egeszsegert-a-teli-sportok-pozitiv-hatasairol-112399#
+https://ski.hu/outlet/felszereles/sicipo
+https://sielok.hu/rovat/tortenelem/cikk/sizes-tortenete/
+https://siutak.eu/sieles-tortenete
+https://www.hervis.hu/shop/Sportvil%C3%A1g/S%C3%ADel%C3%A9s/S%C3%ADbotok/c/3_ski_alpin_stoecke
+https://www.axa-assistance.hu/tippek-es-tanacsok/europa-top-5-sipalyaja/
